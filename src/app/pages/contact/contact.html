@@ -1,0 +1,37 @@
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h1>Call, WhatsApp, or send the form — it all reaches the same number.</h1>
+    <p>
+      {{ site.hours }}. We do not have a public shopfront address on this site yet. Jobs are at your home,
+      plot, office, hall, or yard in Ahmedabad and Gandhinagar.
+    </p>
+    <div class="btn-row">
+      <a class="btn btn-terracotta" [href]="tel">Call {{ site.phoneDisplay }}</a>
+      <a class="btn btn-whatsapp" [href]="wa" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </div>
+</section>
+<section class="section" style="padding-top: 0">
+  <div class="wrap contact-grid">
+    <div>
+      <h2>Book on WhatsApp</h2>
+      <p>Fill this in and your phone opens WhatsApp with the message ready to send.</p>
+      <app-booking-form />
+    </div>
+    <aside class="panel contact-aside">
+      <h2>Direct</h2>
+      <p>Phone<br /><a [href]="tel">{{ site.phoneDisplay }}</a></p>
+      <p>WhatsApp<br /><a [href]="wa" target="_blank" rel="noopener">{{ site.phoneDisplay }}</a></p>
+      <p style="margin-top: 0.4rem">
+        <a class="btn btn-whatsapp" [href]="wa" target="_blank" rel="noopener">Start a WhatsApp chat</a>
+      </p>
+      <p>Email<br /><a [href]="mail">{{ site.email }}</a></p>
+      <p>{{ site.hours }}</p>
+      <p class="note">
+        A Google map embed will be added when the Business Profile is verified. Until then, this number is the
+        booking desk.
+      </p>
+    </aside>
+  </div>
+</section>

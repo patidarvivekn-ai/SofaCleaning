@@ -1,0 +1,45 @@
+@if (city(); as c) {
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">{{ c.name }}</p>
+    <h1>Sofa cleaning in {{ c.name }}</h1>
+    <p>{{ c.intro }}</p>
+    <div class="btn-row">
+      <a class="btn btn-terracotta" [href]="tel">Call {{ site.phoneDisplay }}</a>
+      <a class="btn btn-whatsapp" [href]="wa" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+<section class="section section-muted">
+  <div class="wrap contact-grid">
+    <div>
+      <h2>Localities we cover</h2>
+      <p>
+        This is not a closed list. If your society is new, still send the pin location — we work the full
+        {{ c.name }} urban area.
+      </p>
+      <div class="chips">
+        @for (place of c.places; track place) {
+          <span class="chip">{{ place }}</span>
+        }
+      </div>
+      <p style="margin-top: 1.2rem">
+        <a routerLink="/service-areas">Both cities</a>
+        ·
+        <a routerLink="/services/sofa-cleaning">Sofa cleaning details</a>
+      </p>
+    </div>
+    <div class="panel">
+      <h2>Book in {{ c.name }}</h2>
+      <app-booking-form />
+    </div>
+  </div>
+</section>
+} @else {
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>Area not found</h1>
+      <p><a routerLink="/service-areas">Back to service areas</a></p>
+    </div>
+  </section>
+}

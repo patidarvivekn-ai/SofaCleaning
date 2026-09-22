@@ -1,0 +1,30 @@
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Service area</p>
+    <h1>Sofa cleaning across Ahmedabad and Gandhinagar.</h1>
+    <p>
+      If you live inside either city — including new societies that do not show up on older maps — send the
+      landmark on WhatsApp. We list popular localities below so search engines and humans can both find us.
+    </p>
+  </div>
+</section>
+<section class="section" style="padding-top: 0">
+  <div class="wrap area-cols">
+    <div class="panel">
+      <h2><a routerLink="/service-areas/ahmedabad">Ahmedabad</a></h2>
+      <div class="chips">
+        @for (place of ahmedabad; track place) {
+          <span class="chip">{{ place }}</span>
+        }
+      </div>
+    </div>
+    <div class="panel">
+      <h2><a routerLink="/service-areas/gandhinagar">Gandhinagar</a></h2>
+      <div class="chips">
+        @for (place of gandhinagar; track place) {
+          <span class="chip">{{ place }}</span>
+        }
+      </div>
+    </div>
+  </div>
+</section>

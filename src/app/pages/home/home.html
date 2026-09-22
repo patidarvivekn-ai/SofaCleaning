@@ -1,0 +1,235 @@
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div>
+      <p class="eyebrow">Ahmedabad · Gandhinagar</p>
+      <p class="price-pill">From ₹{{ site.priceSeat }} / seat · ₹{{ site.priceCushion }} / cushion</p>
+      <h1>Sofa cleaning that leaves the fabric clean, not just sprayed.</h1>
+      <p class="lede">
+        {{ site.tagline }}. Home sofas, chairs, carpets, and mattresses — plus party-plot,
+        restaurant, office, auditorium, cinema, and bus seating. Book on a call or chat on WhatsApp.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-terracotta" [href]="tel">Call {{ site.phoneDisplay }}</a>
+        <a class="btn btn-whatsapp" [href]="chat" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero__art">
+      <img
+        src="/images/hero-sofa-cleaning.png"
+        width="960"
+        height="660"
+        fetchpriority="high"
+        alt="Upholstery technician extracting dirt from a fabric sofa in a sunlit living room"
+      />
+      <div class="hero__badge">
+        <strong>₹{{ site.priceSeat }}</strong>
+        <span>per fabric sofa seat · other services quoted on call</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap strip" aria-label="At a glance">
+  <article>
+    <h3>Two cities, one number</h3>
+    <p>Ahmedabad and Gandhinagar, including GIFT City and the western Ahmedabad belt.</p>
+  </article>
+  <article>
+    <h3>{{ site.hoursShort }}</h3>
+    <p>Call or message any day. Visit slots are agreed with you, not dumped on a calendar app.</p>
+  </article>
+  <article>
+    <h3>No invented review counts</h3>
+    <p>We would rather show the work and the price. Google reviews will sit here once the listing is verified.</p>
+  </article>
+</section>
+
+<section class="section section-muted" id="services">
+  <div class="wrap">
+    <p class="eyebrow">What we clean</p>
+    <h2>Sofas first. Carpets, mattresses, and leather on the same visit when it fits.</h2>
+    <p class="lede">
+      Every job is fabric-checked on site. We do not run a carpet machine on a leather sofa and call it a day.
+    </p>
+    <div class="mosaic" style="margin-top: 1.6rem">
+      @for (s of services; track s.slug; let i = $index) {
+        <a class="card-service" [class.featured]="i === 0" [routerLink]="['/services', s.slug]">
+          <img [src]="s.image" [alt]="s.imageAlt" width="720" height="450" loading="lazy" />
+          <div class="card-service__body">
+            <h3>{{ s.name }}</h3>
+            <p>{{ s.short }}</p>
+            <span class="more">How we do it</span>
+          </div>
+        </a>
+      }
+    </div>
+    <p class="eyebrow" style="margin-top: 2.4rem">Event, office &amp; venue seating</p>
+    <h2>Party plots, restaurants, offices, halls, home theatres, and buses.</h2>
+    <p class="lede">
+      These jobs are quoted on WhatsApp after a photo or a seat count — not the home-sofa ₹{{ site.priceSeat }} rate.
+    </p>
+    <div class="venue-grid" style="margin-top: 1.2rem">
+      @for (s of venues; track s.slug) {
+        <a class="venue-card" [routerLink]="['/services', s.slug]">
+          <img [src]="s.image" [alt]="s.imageAlt" width="260" height="200" loading="lazy" />
+          <div>
+            <h3>{{ s.name }}</h3>
+            <p>{{ s.short }}</p>
+            <span class="more">Details</span>
+          </div>
+        </a>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <div class="wrap">
+    <p class="eyebrow">Transparent starting price</p>
+    <h2>₹{{ site.priceSeat }} a seat. ₹{{ site.priceCushion }} a cushion. That is the fabric sofa rate.</h2>
+    <div class="ticket" style="margin-top: 1.6rem">
+      <div>
+        <div class="ticket__price">₹{{ site.priceSeat }} <small>/ seat</small></div>
+        <p style="margin-top: 0.8rem">
+          Count the places people sit. A 3-seater is three seats. Loose cushions are ₹{{ site.priceCushion }} each.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn-terracotta" [href]="tel">Get an exact quote</a>
+          <a class="btn btn-ghost" routerLink="/pricing">Full pricing notes</a>
+        </div>
+      </div>
+      <dl>
+        <div>
+          <dt>Fabric sofa cleaning</dt>
+          <dd>₹{{ site.priceSeat }} per seat + ₹{{ site.priceCushion }} per cushion. Confirmed before we start.</dd>
+        </div>
+        <div>
+          <dt>Shampoo / wet wash, leather, carpet, mattress, stain work, party-plot, chairs, restaurant, office, hall, cinema, bus</dt>
+          <dd>Quoted on call or after a photo. Soil level and size change the time on site.</dd>
+        </div>
+        <div>
+          <dt>No hidden visit fee</dt>
+          <dd>You pay the seats, cushions, or the quote we agreed — not a surprise ladder of add-ons.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="section section-muted">
+  <div class="wrap">
+    <p class="eyebrow">The difference you can see</p>
+    <h2>Before and after — fabric and rugs, photographed as the work looks.</h2>
+    <p class="lede">These are process photographs for this site, not a named customer’s home. Your own piece will vary with fabric, dye, and how old the stain is.</p>
+    <div class="ba" style="margin-top: 1.4rem">
+      <figure>
+        <img src="/images/before-sofa.png" width="800" height="600" alt="Fabric sofa before professional cleaning" loading="lazy" />
+        <figcaption><strong>Before · sofa</strong> — soil and flattening in the seats.</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/after-sofa.png" width="800" height="600" alt="Fabric sofa after deep cleaning" loading="lazy" />
+        <figcaption><strong>After · sofa</strong> — even colour back in the fabric.</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/before-carpet.png" width="800" height="600" alt="Patterned rug before cleaning" loading="lazy" />
+        <figcaption><strong>Before · rug</strong> — dull pile and a spill mark.</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/after-carpet.png" width="800" height="600" alt="Patterned rug after extraction cleaning" loading="lazy" />
+        <figcaption><strong>After · rug</strong> — colour and pile revived.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">Why book us</p>
+    <h2>A local crew that would rather be precise than loud.</h2>
+    <div class="why" style="margin-top: 1rem">
+      @for (item of why; track item.title) {
+        <article>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.text }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="section section-sage">
+  <div class="wrap">
+    <p class="eyebrow">How it works</p>
+    <h2>Book, assess, clean, dry.</h2>
+    <div class="process" style="margin-top: 1.4rem">
+      @for (step of steps; track step.n) {
+        <article>
+          <div class="n">{{ step.n }}</div>
+          <h3>{{ step.title }}</h3>
+          <p>{{ step.text }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="section" id="areas">
+  <div class="wrap">
+    <p class="eyebrow">Service area</p>
+    <h2>All of Ahmedabad and Gandhinagar — if you can share a landmark, we can usually reach you.</h2>
+    <p class="lede">
+      We list the neighbourhoods people search for. If yours is not named, still message us; city limits and new societies are included.
+    </p>
+    <div class="area-cols" style="margin-top: 1.4rem">
+      <div class="panel">
+        <h3>Ahmedabad</h3>
+        <p><a routerLink="/service-areas/ahmedabad">Sofa cleaning across Ahmedabad</a></p>
+        <div class="chips">
+          @for (place of ahmedabad; track place) {
+            <span class="chip">{{ place }}</span>
+          }
+        </div>
+      </div>
+      <div class="panel">
+        <h3>Gandhinagar</h3>
+        <p><a routerLink="/service-areas/gandhinagar">Sofa cleaning across Gandhinagar</a></p>
+        <div class="chips">
+          @for (place of gandhinagar; track place) {
+            <span class="chip">{{ place }}</span>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-muted" id="faq">
+  <div class="wrap-narrow">
+    <p class="eyebrow">Questions</p>
+    <h2>Before you pick up the phone.</h2>
+    <app-faq-list [items]="faqs" />
+    <p style="margin-top: 1.2rem"><a routerLink="/faq">See all FAQs</a></p>
+  </div>
+</section>
+
+<section class="section" id="book">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="eyebrow">Book a visit</p>
+      <h2>Send the details on WhatsApp. We reply with a slot.</h2>
+      <p>
+        The button opens WhatsApp on your phone with your name, number, locality, and service already filled in. Or skip the form —
+        tap Chat on WhatsApp anywhere on the site.
+      </p>
+      <app-booking-form />
+    </div>
+    <aside class="panel contact-aside">
+      <h3>Chat now</h3>
+      <p><a [href]="chat" target="_blank" rel="noopener">WhatsApp {{ site.phoneDisplay }}</a></p>
+      <p><a [href]="tel">Call {{ site.phoneDisplay }}</a></p>
+      <p>{{ site.hours }}</p>
+      <a class="btn btn-whatsapp" [href]="chat" target="_blank" rel="noopener">Start a WhatsApp chat</a>
+      <p class="note">Google Business Profile is not verified yet. We will add the map and review feed here when it is live.</p>
+    </aside>
+  </div>
+</section>

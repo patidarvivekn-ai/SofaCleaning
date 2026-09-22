@@ -1,0 +1,41 @@
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Services</p>
+    <h1>Home sofas — and the seating around the city.</h1>
+    <p>
+      Fabric, leather, carpets, and mattresses at home. Party-plot sofas, restaurant and office chairs,
+      auditoriums, home theatres, and bus seats quoted after a photo.
+    </p>
+  </div>
+</section>
+<section class="section" style="padding-top: 0">
+  <div class="wrap">
+    <p class="eyebrow">At home</p>
+    <div class="mosaic even">
+      @for (s of home; track s.slug) {
+        <a class="card-service" [routerLink]="['/services', s.slug]">
+          <img [src]="s.image" [alt]="s.imageAlt" width="720" height="450" loading="lazy" />
+          <div class="card-service__body">
+            <h2>{{ s.name }}</h2>
+            <p>{{ s.summary }}</p>
+            <span class="more">Details</span>
+          </div>
+        </a>
+      }
+    </div>
+    <p class="eyebrow" style="margin-top: 2.6rem">Event, office &amp; venue</p>
+    <h2>Party plots, restaurants, offices, halls, cinemas, buses.</h2>
+    <div class="venue-grid" style="margin-top: 1.2rem">
+      @for (s of venues; track s.slug) {
+        <a class="venue-card" [routerLink]="['/services', s.slug]">
+          <img [src]="s.image" [alt]="s.imageAlt" width="260" height="200" loading="lazy" />
+          <div>
+            <h3>{{ s.name }}</h3>
+            <p>{{ s.short }}</p>
+            <span class="more">Details</span>
+          </div>
+        </a>
+      }
+    </div>
+  </div>
+</section>

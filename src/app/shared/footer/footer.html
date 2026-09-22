@@ -1,0 +1,32 @@
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <h2>{{ site.name }}</h2>
+      <p class="tagline">{{ site.tagline }}</p>
+      <p>Sofa, chair, carpet, mattress, and venue seating cleaning at your doorstep — or at the plot, office, hall, or bus yard — in Ahmedabad and Gandhinagar.</p>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <ul>
+        @for (link of nav; track link.path) {
+          <li><a [routerLink]="link.path">{{ link.label }}</a></li>
+        }
+        <li><a routerLink="/services/sofa-cleaning">Sofa cleaning</a></li>
+        <li><a routerLink="/service-areas/ahmedabad">Ahmedabad areas</a></li>
+        <li><a routerLink="/service-areas/gandhinagar">Gandhinagar areas</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul>
+        <li><a [href]="tel">{{ site.phoneDisplay }}</a></li>
+        <li><a [href]="wa" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+        <li><a [href]="mail">{{ site.email }}</a></li>
+        <li>{{ site.hours }}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap copyright">
+    © {{ year }} {{ site.name }}. Serving Ahmedabad and Gandhinagar, Gujarat.
+  </div>
+</footer>

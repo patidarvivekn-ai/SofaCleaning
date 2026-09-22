@@ -1,0 +1,56 @@
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Pricing</p>
+    <h1>Clear fabric-sofa rates. Everything else on a quote.</h1>
+    <p>
+      We publish the seat price because that is the question everyone asks first. Leather, carpets,
+      mattresses, and heavy stain work need a look at size and soil — those are quoted on the call.
+    </p>
+  </div>
+</section>
+<section class="section" style="padding-top: 0">
+  <div class="wrap">
+    <div class="ticket">
+      <div>
+        <div class="ticket__price">₹{{ site.priceSeat }} <small>per seat</small></div>
+        <p style="margin-top: 0.75rem">₹{{ site.priceCushion }} per cushion on fabric sofas.</p>
+        <div class="btn-row">
+          <a class="btn btn-terracotta" [href]="tel">Call for a quote</a>
+          <a class="btn btn-whatsapp" [href]="wa" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+      </div>
+      <dl>
+        <div>
+          <dt>How to count seats</dt>
+          <dd>A 3-seater is three seats. An L-shaped piece is counted by usable sitting spaces, agreed with you before work starts.</dd>
+        </div>
+        <div>
+          <dt>Cushions</dt>
+          <dd>Loose seat or back cushions are ₹{{ site.priceCushion }} each, not bundled into the seat rate.</dd>
+        </div>
+        <div>
+          <dt>Quoted on call</dt>
+          <dd>Shampoo / wet wash, leather, carpet, mattress, stain work, party-plot sofas, chairs, restaurant and office seating, auditoriums, home theatres, and bus seats.</dd>
+        </div>
+      </dl>
+    </div>
+    <div class="contact-grid" style="margin-top: 2.5rem">
+      <div class="prose">
+        <h2>What we will not do on price</h2>
+        <p>
+          We will not advertise a tiny “starting from” figure that only covers a stool. The ₹{{ site.priceSeat }}
+          seat rate is the working rate for standard fabric sofa cleaning in Ahmedabad and Gandhinagar.
+        </p>
+        <p>
+          If the fabric is unusually delicate, heavily soiled, or needs a full shampoo, we say so and quote that
+          job separately — still before we start.
+        </p>
+        <p><a routerLink="/services">See each service</a></p>
+      </div>
+      <div class="panel">
+        <h2>Ask for your number</h2>
+        <app-booking-form />
+      </div>
+    </div>
+  </div>
+</section>

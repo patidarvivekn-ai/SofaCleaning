@@ -1,0 +1,32 @@
+<form class="form" (ngSubmit)="submit()" novalidate>
+  <label>
+    Full name
+    <input name="name" [(ngModel)]="name" autocomplete="name" required />
+  </label>
+  <label>
+    Phone
+    <input name="phone" type="tel" [(ngModel)]="phone" autocomplete="tel" inputmode="tel" required />
+  </label>
+  <label>
+    Locality
+    <input
+      name="locality"
+      [(ngModel)]="locality"
+      placeholder="e.g. Bopal, Kudasan, Maninagar"
+      required
+    />
+  </label>
+  <label>
+    Service needed
+    <select name="service" [(ngModel)]="service">
+      @for (s of services; track s.slug) {
+        <option [value]="s.name">{{ s.name }}</option>
+      }
+      <option value="Not sure — please advise">Not sure — please advise</option>
+    </select>
+  </label>
+  @if (error) {
+    <p class="error" role="alert">{{ error }}</p>
+  }
+  <button class="btn btn-whatsapp" type="submit">Send on WhatsApp</button>
+</form>
