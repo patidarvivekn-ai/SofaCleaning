@@ -16,9 +16,9 @@ export class PricingPage {
 
   constructor() {
     inject(SeoService).update({
-      title: 'Sofa Cleaning Price Ahmedabad — ₹150/seat | Ahmedabad Sofa Cleaning',
+      title: 'Sofa Cleaning Price Ahmedabad — ₹170/seat | Ahmedabad Sofa Cleaning',
       description:
-        'Sofa cleaning in Ahmedabad and Gandhinagar from ₹150 per seat and ₹50 per cushion. Other services quoted on call. No hidden visit fees.',
+        'Sofa cleaning in Ahmedabad and Gandhinagar from ₹170 per seat and ₹50 per cushion. Other services quoted on call. No hidden visit fees.',
       path: '/pricing',
     });
   }

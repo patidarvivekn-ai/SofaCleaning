@@ -58,7 +58,7 @@ export class AreaDetailPage {
       }
       this.seo.update({
         title: `Sofa Cleaning ${city.name} | Ahmedabad Sofa Cleaning`,
-        description: `Professional sofa cleaning in ${city.name}. Fabric sofas from ₹150 per seat. Carpets, mattresses, and leather quoted on call. WhatsApp +91 81285 15199.`,
+        description: `Professional sofa cleaning in ${city.name}. Fabric sofas from ₹170 per seat. Carpets, mattresses, and leather quoted on call. WhatsApp +91 81285 15199.`,
         path: `/service-areas/${city.slug}`,
       });
     });
