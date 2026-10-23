@@ -2,9 +2,9 @@ export const SITE = {
   name: 'Ahmedabad Sofa Cleaning',
   shortName: 'ASC',
   tagline: 'Your Sofa, Deep Cleaned & Sanitized',
-  phoneDisplay: '+91 81285 15199',
-  phoneTel: '+918000384001',
-  whatsapp: '918000384001',
+  phoneDisplay: '+91 8000384002',
+  phoneTel: '+918000384002',
+  whatsapp: '918000384002',
   email: 'ahmedabadsofacleaning@gmail.com',
   domain: 'https://ahmedabadsofacleaning.in',
   hours: 'Monday–Sunday, 8:00 AM – 10:00 PM',
@@ -439,7 +439,7 @@ export const FAQS: FaqItem[] = [
   },
   {
     q: 'How do I book?',
-    a: 'Call +91 81285 15199 or WhatsApp the same number. Share your locality, the service you need, and roughly how many seats. You can also send the form on this website — it opens WhatsApp with those details already filled.',
+    a: 'Call +91 8000384002 or WhatsApp the same number. Share your locality, the service you need, and roughly how many seats. You can also send the form on this website — it opens WhatsApp with those details already filled.',
   },
   {
     q: 'How long until the sofa can be used again?',

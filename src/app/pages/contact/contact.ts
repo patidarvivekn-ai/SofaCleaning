@@ -18,7 +18,7 @@ export class ContactPage {
     inject(SeoService).update({
       title: 'Contact & Book Sofa Cleaning | Ahmedabad Sofa Cleaning',
       description:
-        'Book sofa cleaning in Ahmedabad or Gandhinagar. Call or WhatsApp +91 81285 15199. Open 8 AM to 10 PM, every day.',
+        'Book sofa cleaning in Ahmedabad or Gandhinagar. Call or WhatsApp +91 8000384002. Open 8 AM to 10 PM, every day.',
       path: '/contact',
       jsonLd: LOCAL_BUSINESS_JSON_LD,
     });
