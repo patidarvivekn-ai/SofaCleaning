@@ -38,7 +38,7 @@ export class HomePage {
     inject(SeoService).update({
       title: 'Sofa Cleaning Ahmedabad & Gandhinagar | Ahmedabad Sofa Cleaning',
       description:
-        'Sofa cleaning in Ahmedabad and Gandhinagar from ₹170 per seat. Fabric, leather, carpet, and mattress cleaning. Call or WhatsApp +91 8000384002 to book.',
+        'Sofa cleaning in Ahmedabad and Gandhinagar from ₹199 per seat. Fabric, leather, carpet, and mattress cleaning. Call or WhatsApp +91 8000384002 to book.',
       path: '/',
       jsonLd: LOCAL_BUSINESS_JSON_LD,
     });

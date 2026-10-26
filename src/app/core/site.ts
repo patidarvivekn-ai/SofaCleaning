@@ -10,7 +10,7 @@ export const SITE = {
   hours: 'Monday–Sunday, 8:00 AM – 10:00 PM',
   hoursShort: 'Open 8 AM – 10 PM, all week',
   cities: ['Ahmedabad', 'Gandhinagar'] as const,
-  priceSeat: 170,
+  priceSeat: 199,
   priceCushion: 50,
   ogImage: '/images/hero-sofa-cleaning.png',
 } as const;
@@ -61,9 +61,9 @@ export const SERVICES: ServiceItem[] = [
       'Surface dust, body oils, and trapped grit come out of the seats — not just the armrests you can see.',
     image: '/images/hero-sofa-cleaning.png',
     imageAlt: 'Technician deep-cleaning a fabric sofa in a living room',
-    seoTitle: 'Sofa Cleaning in Ahmedabad & Gandhinagar | ₹170 per seat',
+    seoTitle: 'Sofa Cleaning in Ahmedabad & Gandhinagar | ₹199 per seat',
     seoDescription:
-      'Professional sofa cleaning in Ahmedabad and Gandhinagar. Deep fabric cleaning from ₹170 per seat and ₹50 per cushion. Book on call or WhatsApp.',
+      'Professional sofa cleaning in Ahmedabad and Gandhinagar. Deep fabric cleaning from ₹199 per seat and ₹50 per cushion. Book on call or WhatsApp.',
     includes: [
       'Vacuum and pre-treat visible marks',
       'Fabric-safe extraction on seats, backs, and arms',
@@ -72,7 +72,7 @@ export const SERVICES: ServiceItem[] = [
     ],
     body: [
       'Most sofas in Ahmedabad collect dust, pollen, and cooking film faster than a weekly wipe can handle. We clean the usable surface of each seat — the parts your family actually sits on — with a method matched to the fabric.',
-      'Pricing is straightforward: ₹170 per seat and ₹50 per cushion. A 3-seater with two loose cushions is quoted before work starts, so there is no guesswork at the door.',
+      'Pricing is straightforward: ₹199 per seat and ₹50 per cushion. A 3-seater with two loose cushions is quoted before work starts, so there is no guesswork at the door.',
     ],
     group: 'home',
   },
@@ -431,7 +431,7 @@ export interface FaqItem {
 export const FAQS: FaqItem[] = [
   {
     q: 'How is sofa cleaning priced?',
-    a: 'Fabric sofa cleaning starts at ₹170 per seat and ₹50 per cushion. A 3-seater is three seats. Loose back or seat cushions are counted separately. Leather, carpets, mattresses, and heavy stain work are quoted on a call once we know the piece.',
+    a: 'Fabric sofa cleaning starts at ₹199 per seat and ₹50 per cushion. A 3-seater is three seats. Loose back or seat cushions are counted separately. Leather, carpets, mattresses, and heavy stain work are quoted on a call once we know the piece.',
   },
   {
     q: 'Do you serve both Ahmedabad and Gandhinagar?',
@@ -459,7 +459,7 @@ export const FAQS: FaqItem[] = [
   },
   {
     q: 'Do you clean party-plot sofas, restaurant chairs, offices, auditoriums, home theatres, and bus seats?',
-    a: 'Yes. Party-plot banquet sofas, dining chairs, restaurant booths, office chairs and sofas, auditorium rows, home-theatre recliners, and bus seats are quoted on a call or WhatsApp after a photo or a seat count. They are not the ₹170 home-sofa seat rate.',
+    a: 'Yes. Party-plot banquet sofas, dining chairs, restaurant booths, office chairs and sofas, auditorium rows, home-theatre recliners, and bus seats are quoted on a call or WhatsApp after a photo or a seat count. They are not the ₹199 home-sofa seat rate.',
   },
   {
     q: 'Do I need to be at home?',
@@ -501,7 +501,7 @@ export const PROCESS_STEPS = [
 export const WHY_POINTS = [
   {
     title: 'Price you can see first',
-    text: '₹170 per seat and ₹50 per cushion for fabric sofa cleaning. Other work is quoted before we start — not after.',
+    text: '₹199 per seat and ₹50 per cushion for fabric sofa cleaning. Other work is quoted before we start — not after.',
   },
   {
     title: 'Method matched to the fabric',
